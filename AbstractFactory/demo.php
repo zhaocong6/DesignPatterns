@@ -6,16 +6,24 @@
  * Time: 下午5:28
  */
 include './Car.php';
+include './CarInterface.php';
 include './FordCar.php';
 include './BmwCar.php';
-include './FactoryException.php';
+include './AbstractFactoryException.php';
 
 $car = new Car();
 
 try{
     $ford = $car->instance(FordCar::class);
-    $ford = $car->instance(BmwCar::class);
-    $ford = $car->instance(Bmw2Car::class);
+    echo $ford->accelerator(1);
+
+    echo PHP_EOL;
+
+    $bmw = $car->instance(BmwCar::class);
+    echo $bmw->brake(0);
+
+    echo PHP_EOL;
+    $bmw = $car->instance(Bmw2Car::class);
 }catch (AbstractFactoryException $exception){
     echo $exception->getMessage();
 }
