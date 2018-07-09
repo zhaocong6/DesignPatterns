@@ -13,8 +13,11 @@ include './FactoryException.php';
 $car = new Car();
 
 try{
+
     $ford = $car->instance(FordCar::class);
+
     $ford = $car->instance(BmwCar::class);
+
     $ford = $car->instance(Bmw2Car::class);
 }catch (AbstractFactoryException $exception){
     echo $exception->getMessage();
