@@ -8,7 +8,7 @@
 include './Car.php';
 include './src/FordCar.php';
 include './src/BmwCar.php';
-include './FactoryException.php';
+include './Exception/FactoryException.php';
 
 $car = new Car();
 
