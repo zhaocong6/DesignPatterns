@@ -5,10 +5,10 @@
  * Date: 18-7-9
  * Time: 下午5:28
  */
-include './Car.php';
-include './src/FordCar.php';
-include './src/BmwCar.php';
-include './Exception/FactoryException.php';
+include '../Car.php';
+include '../src/FordCar.php';
+include '../src/BmwCar.php';
+include '../Exception/FactoryException.php';
 
 $car = new Car();
 
