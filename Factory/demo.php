@@ -19,6 +19,6 @@ try{
     $ford = $car->instance(BmwCar::class);
 
     $ford = $car->instance(Bmw2Car::class);
-}catch (AbstractFactoryException $exception){
+}catch (FactoryException $exception){
     echo $exception->getMessage();
 }
