@@ -6,11 +6,11 @@
  * Time: 下午5:28
  */
 
-include './Car.php';
-include './Interface/CarInterface.php';
-include './src/FordCar.php';
-include './src/BmwCar.php';
-include './Exception/AbstractFactoryException.php';
+include '../Car.php';
+include '../Interface/CarInterface.php';
+include '../src/FordCar.php';
+include '../src/BmwCar.php';
+include '../Exception/AbstractFactoryException.php';
 
 $car = new Car();
 
