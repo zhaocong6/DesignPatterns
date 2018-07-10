@@ -6,7 +6,7 @@
  * Time: 下午5:24
  */
 
-class FordCar
+class FordCar implements CarInterface
 {
     public function __construct()
     {
