@@ -12,7 +12,7 @@ class Car
     /**
      * @param string $class
      * @return BmwCar|FordCar
-     * @throws AbstractFactoryException
+     * @throws FactoryException
      */
     public function instance(string $class)
     {
@@ -24,7 +24,7 @@ class Car
                 return new BmwCar();
                 break;
             default:
-                throw new AbstractFactoryException('此工厂没有该实例!');
+                throw new FactoryException('此工厂没有该实例!');
         }
     }
 }
