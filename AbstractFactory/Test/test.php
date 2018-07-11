@@ -6,6 +6,7 @@
  * Time: 下午5:28
  */
 
+include '../Interface/CarFactory.php';
 include '../Car.php';
 include '../Interface/CarInterface.php';
 include '../src/FordCar.php';

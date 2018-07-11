@@ -7,14 +7,14 @@
  * Time: 下午5:17
  */
 
-class Car
+class Car implements CarFactory
 {
     /**
      * @param string $class
-     * @return BmwCar|FordCar
+     * @return CarInterface
      * @throws AbstractFactoryException
      */
-    public function instance(string $class)
+    public function instance(string $class) :CarInterface
     {
         switch ($class){
             case FordCar::class:
