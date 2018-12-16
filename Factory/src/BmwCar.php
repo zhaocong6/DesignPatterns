@@ -6,11 +6,16 @@
  * Time: 下午5:25
  */
 
-class BmwCar
+class BmwCar implements CarInterface
 {
     public function __construct()
     {
-        echo '宝马汽车!';
+        echo $this->getBrand();
         echo PHP_EOL;
+    }
+
+    public function getBrand():string
+    {
+        return '福特汽车!';
     }
 }
